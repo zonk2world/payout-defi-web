@@ -1,0 +1,22 @@
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+dist/
+build/
+
+*.log*
+*.env*
+!.env.stage
+!.env.local
+!.env.prod
+!.env.defaults
+.npmrc
+
+.eslintcache
+build
+
+/server/cache/*
+
+# don't ignore keep files
+!.gitkeep

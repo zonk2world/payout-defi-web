@@ -1,0 +1,106 @@
+.MuiBox-root {
+    width: auto !important;
+}
+
+.MuiButton-text {
+    padding: 0;
+    background: transparent !important;
+}
+
+.MuiLinearProgress-root {
+    width: 87px !important;
+    height: 32px !important;
+}
+
+.success-button,
+.error-button{
+    width: 120px !important;
+    height: 34px !important;
+    color: #fff !important;
+}
+.error-button,
+.MuiButtonBase-root.error-button:focus{
+    background-color: red !important;
+}
+
+.MuiButton-text:focus {
+    outline: none !important;
+}
+
+.success-button,
+.MuiButtonBase-root.success-button:focus{
+    background-color: #30b651 !important;
+}
+.MuiPaper-elevation1 {
+    box-shadow: none !important;
+}
+
+.MuiListItem-button:hover {
+    background-color: transparent !important;
+}
+
+.MuiListItem-gutters {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.MuiList-padding {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.MuiMenuItem-root {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.MuiTableHead-root {
+    background-color: #E9F2FF;
+}
+
+.MuiPaper-root h5{
+    font-size: 18px;
+    margin: 0;
+    line-height: 36px;
+    color: #000;
+    display: inline-table;
+    font-weight: 500;
+    padding: 5px 0 10px 16px;
+}
+
+.success-msg {
+    border: 1px solid #ccc;
+    min-width: 20rem;
+    padding: 10px 10px 15px 10px;
+    position: relative;
+}
+.success-msg .MuiMenuItem-root {
+    display: block;
+}
+.success-msg a, .success-msg p {
+    display: block;
+    text-align: left;
+    margin: 0 0 0 50px;
+    font-size: 18px;
+    font-weight:600;
+}
+.success-msg a{
+   color: #2e94fb;
+    text-decoration: none !important;
+}
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #78909c;
+}
+.success-check,
+.error-check{
+    position: absolute;
+    left:15px;
+    top: 10px;
+    color: #33b753;
+}
+.error-check{
+    color: red;
+}

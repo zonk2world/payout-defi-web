@@ -1,0 +1,35 @@
+{
+    "apps": [
+        {
+            "name": "DeFi Server",
+            "script": "npm",
+            "args": "run server",
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        },
+
+        {
+            "name": "DeFi Front-End Application",
+            "script": "npm",
+            "args": "run start:prod",
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        }
+
+    ],
+    "deploy": {
+        "production": {
+            "user": "root",
+            "host": [
+                "161.35.141.49"
+            ],
+            "ref": "origin/master",
+            "repo": "git@github.com:bitpopulous/Populous-DeFi-web.git",
+            "path": "/var/www/DeFi",
+            "key": "~/Desktop/live_beta.pem",
+            "post-deploy": "cp .env.prod .env && npm install && npm run build && pm2 reload ecosystem.json --env production"
+        }
+    }
+}
